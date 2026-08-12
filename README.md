@@ -68,3 +68,9 @@ C   10     0050.0100.1a00   dynamic  NA         F      F    nve1(172.4.5.1)
 *   10     5001.0011.800a   dynamic  NA         F      F    Eth1/10
 C   10     5001.0013.800a   dynamic  NA         F      F    nve1(172.4.5.1)
 G   10     500f.0000.1b08   static   -         F      F    sup-eth1(R)
+
+
+
+Pal-ALto Cheat Commands
+
+set cli config-output-format set. - see the configuration set display mode
