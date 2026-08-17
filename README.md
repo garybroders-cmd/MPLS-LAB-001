@@ -79,3 +79,21 @@ set cli config-output-format set. - see the configuration set display mode
 NAT
 debug ip nat - see nat translations
 debug ip icmp - see 
+
+
+Palo Alto Cheat
+
+show high-availability state
+show high-availability all
+show session info
+show counter global filter delta yes
+
+show high-availability state | match sync
+
+
+>>>> Force a synce from actibve firewall
+request high-availability sync-to-remote running-config
+
+
+>>>> on passive firewall
+debug software restart process management-server
