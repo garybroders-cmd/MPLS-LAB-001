@@ -74,3 +74,8 @@ G   10     500f.0000.1b08   static   -         F      F    sup-eth1(R)
 Pal-ALto Cheat Commands
 
 set cli config-output-format set. - see the configuration set display mode
+
+
+NAT
+debug ip nat - see nat translations
+debug ip icmp - see 
