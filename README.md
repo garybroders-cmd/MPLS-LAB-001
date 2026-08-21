@@ -97,3 +97,43 @@ request high-availability sync-to-remote running-config
 
 >>>> on passive firewall
 debug software restart process management-server
+
+
+
+
+
+Palo Alto
+
+admin@PA-FW-SITE-4-a(active-primary)> show arp all
+
+maximum of entries supported :      32000
+default timeout:                    1800 seconds
+total ARP entries in table :        4
+total ARP entries shown :           4
+status: s - static, c - complete, e - expiring, i - incomplete
+
+interface                ip address      hw address        port              status   ttl  
+--------------------------------------------------------------------------------
+ethernet1/1              10.160.14.1     50:01:00:1f:00:01 ethernet1/1                c      995  
+ethernet1/1              10.160.14.6     50:01:00:20:00:01 ethernet1/1                c      1490 
+ethernet1/2              10.160.4.3      50:01:00:20:00:02 ethernet1/2                c      1490 
+ethernet1/2              10.160.4.4      50:02:00:00:1b:08 ethernet1/2                c      1446 
+
+admin@PA-FW-SITE-4-a(active-primary)> 
+
+
+admin@PA-FW-SITE-4-a(active-primary)> show high-availability virtual-address 
+
+Total interfaces with virtual address configured:   2
+Total virtual addresses configured:                 2
+--------------------------------------------------------------------------------
+Interface: ethernet1/1                   
+  Virtual MAC:               50:01:00:21:00:01
+  10.160.14.4                             Active:yes Type:floating   Pri-Bind:no 
+--------------------------------------------------------------------------------
+Interface: ethernet1/2                   
+  Virtual MAC:               50:01:00:21:00:02
+  10.160.4.1                              Active:yes Type:floating   Pri-Bind:no 
+--------------------------------------------------------------------------------
+admin@PA-FW-SITE-4-a(active-primary)> 
+
