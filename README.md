@@ -1,5 +1,7 @@
 # MPLS-LAB-001 - Notes
 
+GB- 25 Nov -2026 Upgraded the MPLS Topology to use bfd on ISIS.
+
 No security atm.  TBA.
 
 r-mpls-1- 6 are simple MPLS using ISIS routing
